@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vijay D | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom right, #f0f8ff, #e6e6fa);
+      color: #333;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: #fff;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    nav a:hover { color: #0077cc; }
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .hero {
+      text-align: center;
+      background: linear-gradient(135deg, #9be7ff 0%, #e0c3fc 100%);
+      padding: 5rem 2rem;
+      border-radius: 12px;
+      color: #222;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+    .hero h1 { font-size: 3rem; margin-bottom: 0.5rem; }
+    .role-switcher {
+      font-size: 1.2rem;
+      font-style: italic;
+      color: #222;
+      height: 24px;
+      margin-top: 10px;
+      animation: fadeIn 1s infinite alternate;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0.3; }
+      to { opacity: 1; }
+    }
+    .cta-buttons a {
+      display: inline-block;
+      margin: 15px 10px;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease-in-out;
+    }
+    .btn-blue { background: #0077cc; color: white; }
+    .btn-dark { background: #222; color: white; }
+    .btn-outline { border: 2px solid #444; color: #444; background: #fff; }
+    .btn-blue:hover, .btn-dark:hover, .btn-outline:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+    .project, .service {
+      background: linear-gradient(to right, #ffffff, #f8f8ff);
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .project:hover, .service:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+    }
+    form input, form textarea {
+      width: 100%;
+      margin: 0.5rem 0;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+    form button {
+      padding: 10px 20px;
+      background: #0077cc;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    form button:hover { background: #005fa3; }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+<header data-aos="fade-down">
+  <h1>Vijay D</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" id="home" data-aos="zoom-in">
+  <h1>Vijay D</h1>
+  <div class="role-switcher" id="role">AI/ML Innovator</div>
+  <p style="margin-top: 1rem; font-size: 1.1rem; max-width: 600px; margin-inline: auto;">
+    I transform data and code into impactful, intelligent solutions. Bridging theory with practice through AI, ML, and intuitive web design.
+  </p>
+  <div class="cta-buttons">
+    <a href="#projects" class="btn-blue">Explore Portfolio</a>
+    <a href="#contact" class="btn-dark">Hire Me</a>
+    <a href="VIJAYD.pdf" class="btn-outline" download>Download Resume</a>
+  </div>
+</section>
+
+<section id="about" data-aos="fade-up">
+  <h2>About Me</h2>
+  <p>
+    Pre-final year B.E. CSE (AI & ML) student at Vel Tech High Tech. I focus on AI, ML, prompt engineering, and frontend development. I love solving real-world problems and building responsible tech.
+  </p>
+  <h3>Education</h3>
+  <ul>
+    <li>B.E. CSE (AI & ML), Vel Tech High Tech College (2023–2027)</li>
+    <li>Diploma in Software Engineering, Apollo (2023–2024)</li>
+    <li>12th – WPA Soundrapandiyan HSS, Chennai</li>
+    <li>10th – Bethel Matric HSS, Chennai</li>
+  </ul>
+</section>
+
+<section id="projects" data-aos="fade-up">
+  <h2>Projects</h2>
+  <div class="project"><h4>Language Translation App (SIH 2023)</h4><p>Translated government schemes using Google Translate and gTTS (Hindi, Tamil, English).</p></div>
+  <div class="project"><h4>Agriculture Advisor (SIH 2024)</h4><p>AI-powered farming suggestions using OpenAI API based on user input.</p></div>
+  <div class="project"><h4>OCR with CNN</h4><p>Digit and letter recognition using TensorFlow and Keras to convert handwriting into text.</p></div>
+</section>
+
+<section id="services" data-aos="fade-left">
+  <h2>Services</h2>
+  <div class="service"><h4>Freelance Projects</h4><p>Academic help, Python apps, ML prototypes</p></div>
+  <div class="service"><h4>Content Writing</h4><p>Storytelling, creative writing, social media content</p></div>
+</section>
+
+<section id="contact" data-aos="fade-right">
+  <h2>Contact Me</h2>
+  <form>
+    <input type="text" placeholder="Your Name" required />
+    <input type="email" placeholder="Your Email" required />
+    <textarea rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+  <div style="margin-top: 20px;">
+    <p>📧 Email: <a href="mailto:vijayd2708@gmail.com">vijayd2708@gmail.com</a></p>
+    <p>📞 Phone: +91 94459 42708</p>
+    <p>🔗 LinkedIn: <a href="https://linkedin.com/in/vijayd2708" target="_blank">linkedin.com/in/vijayd2708</a></p>
+  </div>
+</section>
+
+<footer>© 2025 Vijay D. All rights reserved.</footer>
+
+<script>
+  const roles = ["AI/ML Innovator", "Frontend Developer", "Content Creator"];
+  let i = 0;
+  setInterval(() => {
+    document.getElementById("role").textContent = roles[i];
+    i = (i + 1) % roles.length;
+  }, 2000);
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script> AOS.init({ duration: 1200 }); </script>
+</body>
+</html>
